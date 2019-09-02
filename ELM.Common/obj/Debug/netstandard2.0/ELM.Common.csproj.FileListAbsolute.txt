@@ -15,7 +15,6 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Co
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\bin\Debug\netstandard2.0\ELM.Common.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
-C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.csprojAssemblyReference.cache
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.csproj.CoreCompileInputs.cache
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.AssemblyInfoInputs.cache
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.AssemblyInfo.cs
