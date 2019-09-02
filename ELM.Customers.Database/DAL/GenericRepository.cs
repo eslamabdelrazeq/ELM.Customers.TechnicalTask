@@ -1,4 +1,5 @@
-﻿using ELM.Common.DTO;
+﻿using EFCore.BulkExtensions;
+using ELM.Common.DTO;
 using ELM.Common.Entities.Base;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -248,7 +249,7 @@ namespace ELM.Customers.Database.DAL
                     (entity as BaseEntity).CreatedAt = DateTime.Now; ;
                     (entity as BaseEntity).CreatedByUserId = "SystemAdmin";
                 }
-                _dbSet.AddRange(entites);
+                _context.BulkInsert(entites);
             }
             catch (Exception ex)
             {
