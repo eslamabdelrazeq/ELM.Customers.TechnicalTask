@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Change databse connections string in appsettings.json to match your server and restore ELMCustomers.bak file.
+Change database connection string in appsettings.json to match your server and restore ELMCustomers.bak file.
 ```
 
 ```
@@ -19,7 +19,7 @@ Make sure rabbitmq is up and running on port 15672
 
 ## Running the project
 
-Navigate to each of the following project folder execute this command
+Navigate to each of the following project folder then execute this command
 
 ```
 dotnet run
@@ -43,7 +43,7 @@ Folders
 ### Testing the project
 
 ```
-Open customers API and navigate to swagger, Then execute Patch request for the cutomers API.
+Open customers API and navigate to swagger, Then execute Patch request for the cutomers API. That will be propagated to all consumers.
 ```
 
 
