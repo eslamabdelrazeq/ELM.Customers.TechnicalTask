@@ -17,10 +17,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MassTransit" Version="5.5.6-develop.2133" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="5.5.6-develop.2133" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.1.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
     <PackageReference Include="RabbitMQ.Client" Version="6.0.0-pre3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ELM.Common\ELM.Common.csproj" />
+    <ProjectReference Include="..\ELM.Notifications.Handlers\ELM.Notifications.Handlers.csproj" />
   </ItemGroup>
 
 </Project>

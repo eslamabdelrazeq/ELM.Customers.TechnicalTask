@@ -5,11 +5,21 @@
     }
   },
   "RabbitMq": {
+    "UserName": "guest",
+    "Password": "guest",
     "Address": "localhost",
     "Port": 15672,
     "Exchang": "direct_notifications_patch",
     "ExhangeType": "direct",
-    "Routing": "notifications_patch"
+    "QueueName": "notifications_patch",
+    "Routing": "notifications_patch",
+    "MaxConcurrentMessages": 20,
+    "FailRetryCount": 3,
+    "Durable": "yes",
+    "AutoDelete": "yes",
+    "FailRetryInterval": 100,
+    "DeadLetterExchange": "failed_notifications_exchange",
+    "DeadLetterQueueName": "failed_notifications_patch"
   }
 }
 

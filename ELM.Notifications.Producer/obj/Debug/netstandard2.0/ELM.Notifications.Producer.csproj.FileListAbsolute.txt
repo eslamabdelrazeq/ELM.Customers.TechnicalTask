@@ -17,4 +17,3 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.No
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.AssemblyInfo.cs
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.pdb
-C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.csprojAssemblyReference.cache

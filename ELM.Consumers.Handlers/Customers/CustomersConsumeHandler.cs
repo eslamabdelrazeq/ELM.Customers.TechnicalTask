@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,16 +32,23 @@ namespace ELM.Consumers.Handlers.Customers
             #endregion
 
             #region Notify Notifications API
+            RequestModel<List<NotificationDTO>> notifications = new RequestModel<List<NotificationDTO>>();
+            notifications.Header = context.Message.Header;
+            notifications.Body = context.Message.Body.Select(c => new NotificationDTO
+            {
+                Email = c.Email,
+                FirstName = c.FirstName
+            }).ToList();
 
             var request = new HttpRequestMessage(new HttpMethod("PATCH"), $"{NotificationsAPIURL}");
-            request.Content = new StringContent(JsonConvert.SerializeObject(context.Message), Encoding.UTF8, "application/json");
+            request.Content = new StringContent(JsonConvert.SerializeObject(notifications), Encoding.UTF8, "application/json");
             try
             {
                 var response = await HttpClient.SendAsync(request);
             }
             catch (HttpRequestException ex)
             {
-                Console.WriteLine("Notifications API is not reachable",ex.Message);
+                throw new Exception("Notifications API error", ex);
             }
             #endregion
         }
