@@ -7,15 +7,12 @@ namespace ELM.Common.RabbitMqConfigs
 {
     public static class RabbitConfigurationsLoader
     {
-        public static RabbitConfig LoadConfigurations(string appsettingsFileName,bool isConsumer)
+        public static RabbitConfig LoadConfigurations(string appsettingsFileName,bool isConsumer = false)
         {
             #region Init Config
             IConfiguration config = new ConfigurationBuilder()
-                      .AddJsonFile("customer.consumer.appsettings.json", true, true)
+                      .AddJsonFile($"{appsettingsFileName}", true, true)
                       .Build();
-            var notificationsSection = config.GetSection("NotificationsAPI");
-            string notificationsAPIURL = notificationsSection.GetSection("Address").Value;
-
             var rabbitSection = config.GetSection("RabbitMq");
             SystemConstants.ConnectionString = config.GetConnectionString("DbConnection");
             #endregion

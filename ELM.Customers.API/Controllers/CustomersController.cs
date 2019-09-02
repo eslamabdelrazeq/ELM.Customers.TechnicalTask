@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using ELM.Common.BaseRequestResponse;
 using ELM.Common.DTO;
+using ELM.Common.Interfaces.CustomerService;
 using ELM.Customers.API.Controllers.Base;
 using ELM.Customers.Services.Customer;
-using ELM.Customers.Services.Queue;
 using FluentValidation;
-using Microsoft.AspNetCore.Http;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ELM.Customers.API.Controllers
@@ -18,13 +18,13 @@ namespace ELM.Customers.API.Controllers
     public class CustomersController : BaseController
     {
         private readonly IValidator<List<CustomerDTO>> _validator;
-        private readonly ICustomerPublisher _customerPublisher;
         private readonly ICustomerService _customerService;
-        public CustomersController(IValidator<List<CustomerDTO>> validator, ICustomerService customerService, ICustomerPublisher customerPublisher)
+        private readonly IBus _bus;
+        public CustomersController(IValidator<List<CustomerDTO>> validator, IBus bus, ICustomerService customerService)
         {
-            _customerPublisher = customerPublisher;
-            _customerService = customerService;
             _validator = validator;
+            _bus = bus;
+            _customerService = customerService;
         }
 
         [HttpPatch]
@@ -36,7 +36,8 @@ namespace ELM.Customers.API.Controllers
                 result = await _customerService.ValidateCustomers(customers);
                 if(!result.Body.Errors.Any())
                 {
-                    result = await _customerPublisher.PublishCustomers(customers);
+                    await  _bus.Publish<RequestModel<List<CustomerDTO>>>(customers);
+                    result.Body.Data = "You request has been submitted successfuly.";
                     return await HandleResponse(customers.Header, result);
                 }
             }

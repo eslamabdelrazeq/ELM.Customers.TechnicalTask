@@ -92,15 +92,6 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.0.0-preview8.19405.3": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore/2.1.2": {
         "type": "package",
         "dependencies": {
@@ -221,11 +212,11 @@
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
-      "Microsoft.Extensions.Configuration.FileExtensions/3.0.0-preview8.19405.4": {
+      "Microsoft.Extensions.Configuration.FileExtensions/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration": "3.0.0-preview8.19405.4",
-          "Microsoft.Extensions.FileProviders.Physical": "3.0.0-preview8.19405.4"
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
@@ -234,13 +225,12 @@
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Json/3.0.0-preview8.19405.4": {
+      "Microsoft.Extensions.Configuration.Json/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration": "3.0.0-preview8.19405.4",
-          "Microsoft.Extensions.Configuration.FileExtensions": "3.0.0-preview8.19405.4",
-          "System.Text.Json": "4.6.0-preview8.19405.3",
-          "System.Threading.Tasks.Extensions": "4.5.2"
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
@@ -270,10 +260,10 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview8.19405.4": {
+      "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.0.0-preview8.19405.4"
+          "Microsoft.Extensions.Primitives": "2.2.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
@@ -282,11 +272,11 @@
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Physical/3.0.0-preview8.19405.4": {
+      "Microsoft.Extensions.FileProviders.Physical/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview8.19405.4",
-          "Microsoft.Extensions.FileSystemGlobbing": "3.0.0-preview8.19405.4"
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
@@ -295,7 +285,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
         }
       },
-      "Microsoft.Extensions.FileSystemGlobbing/3.0.0-preview8.19405.4": {
+      "Microsoft.Extensions.FileSystemGlobbing/2.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
@@ -1283,27 +1273,13 @@
           "ref/netstandard1.3/_._": {}
         }
       },
-      "System.Text.Encodings.Web/4.6.0-preview8.19405.3": {
+      "System.Text.Encodings.Web/4.5.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
-        }
-      },
-      "System.Text.Json/4.6.0-preview8.19405.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.0.0-preview8.19405.3",
-          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview8.19405.3",
-          "System.Text.Encodings.Web": "4.6.0-preview8.19405.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Text.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Text.Json.dll": {}
         }
       },
       "System.Text.RegularExpressions/4.3.0": {
@@ -1342,13 +1318,18 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.2": {
+      "System.Threading.Tasks.Extensions/4.3.0": {
         "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "lib/netstandard1.0/_._": {}
         },
         "runtime": {
-          "lib/netcoreapp2.1/_._": {}
+          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
       "System.Threading.ThreadPool/4.3.0": {
@@ -1403,14 +1384,29 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.Extensions.Configuration.FileExtensions": "3.0.0-preview8.19405.4",
-          "Microsoft.Extensions.Configuration.Json": "3.0.0-preview8.19405.4"
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1"
         },
         "compile": {
           "bin/placeholder/ELM.Common.dll": {}
         },
         "runtime": {
           "bin/placeholder/ELM.Common.dll": {}
+        }
+      },
+      "ELM.Consumers.Handlers/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "ELM.Common": "1.0.0",
+          "MassTransit": "5.5.6-develop.2133",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1"
+        },
+        "compile": {
+          "bin/placeholder/ELM.Consumers.Handlers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ELM.Consumers.Handlers.dll": {}
         }
       },
       "ELM.Customers.Data/1.0.0": {
@@ -1425,28 +1421,11 @@
           "bin/placeholder/ELM.Customers.Data.dll": {}
         }
       },
-      "ELM.Customers.Producer/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "2.1.1",
-          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
-          "Microsoft.Extensions.Configuration.Json": "2.1.1",
-          "RabbitMQ.Client": "6.0.0-pre3"
-        },
-        "compile": {
-          "bin/placeholder/ELM.Customers.Producer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ELM.Customers.Producer.dll": {}
-        }
-      },
       "ELM.Customers.Services/1.0.0": {
         "type": "project",
         "dependencies": {
           "ELM.Common": "1.0.0",
-          "ELM.Customers.Data": "1.0.0",
-          "ELM.Customers.Producer": "1.0.0"
+          "ELM.Customers.Data": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ELM.Customers.Services.dll": {}
@@ -1540,30 +1519,6 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
         "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.http.features.nuspec"
-      ]
-    },
-    "Microsoft.Bcl.AsyncInterfaces/1.0.0-preview8.19405.3": {
-      "sha512": "fowVw3n2uQnOnkU7QMGYSTAz5kd4domODpUAhHKEJclnh3W9Hfs3x1CP3ScFEmZsdgNEavv1/87mntWfYq4tsw==",
-      "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/1.0.0-preview8.19405.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
-        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
-        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.1.0.0-preview8.19405.3.nupkg.sha512",
-        "microsoft.bcl.asyncinterfaces.nuspec",
-        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "Microsoft.EntityFrameworkCore/2.1.2": {
@@ -1695,31 +1650,29 @@
         "microsoft.extensions.configuration.binder.nuspec"
       ]
     },
-    "Microsoft.Extensions.Configuration.FileExtensions/3.0.0-preview8.19405.4": {
-      "sha512": "9EAKYXQBDc+nhdhhComiRgifSyzH9dYYru8ju/bqrZalCIbl2JhJ44mGV5eIz3qCZWzY4OSgizq3LNK6rIPpCQ==",
+    "Microsoft.Extensions.Configuration.FileExtensions/2.1.1": {
+      "sha512": "JnhKotPCs1+X4CPSsHOk8CpxmBeIS/vIXYewsoM8XflXNhpzMe1gfIckQyuRKyORlGaNFEBr4WrPjpZ159bS/Q==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.fileextensions/3.0.0-preview8.19405.4",
+      "path": "microsoft.extensions.configuration.fileextensions/2.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
-        "microsoft.extensions.configuration.fileextensions.3.0.0-preview8.19405.4.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.2.1.1.nupkg.sha512",
         "microsoft.extensions.configuration.fileextensions.nuspec"
       ]
     },
-    "Microsoft.Extensions.Configuration.Json/3.0.0-preview8.19405.4": {
-      "sha512": "0bcQ8ShzR4TZyoaapRssXKqHfb4jTSN4cdCn2Q/2n9IWgCLWU5bDSZeo41/Fqi3gmW4+6XKPB29DTRJ4hIh4Wg==",
+    "Microsoft.Extensions.Configuration.Json/2.1.1": {
+      "sha512": "f6KcI9v0GVA4YL/ExoxrEfeQv9La3hyQnySfgxGkFtMeDJIUun0ANoMjspbdpXXnuaScwgbQ2mFE3lJHt9lpJw==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.json/3.0.0-preview8.19405.4",
+      "path": "microsoft.extensions.configuration.json/2.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.dll",
-        "lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
-        "microsoft.extensions.configuration.json.3.0.0-preview8.19405.4.nupkg.sha512",
+        "microsoft.extensions.configuration.json.2.1.1.nupkg.sha512",
         "microsoft.extensions.configuration.json.nuspec"
       ]
     },
@@ -1753,42 +1706,42 @@
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview8.19405.4": {
-      "sha512": "xSjonUlZ+WKTQTJ/sX1hHCnBdH1huNBYAPFaKd6UfXs0f0+1TBc1/xrwUYkKkzTuUT7SnwhA+amkDiaGpQoC8g==",
+    "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+      "sha512": "33vTyijzAVEfbuNFts68R7bW02cJMiw21MFgMBk+XL+thcbv335PVD1+DdMSvN6e5DeAR4OmPSRsKIr86Yk4qg==",
       "type": "package",
-      "path": "microsoft.extensions.fileproviders.abstractions/3.0.0-preview8.19405.4",
+      "path": "microsoft.extensions.fileproviders.abstractions/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
-        "microsoft.extensions.fileproviders.abstractions.3.0.0-preview8.19405.4.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
         "microsoft.extensions.fileproviders.abstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Physical/3.0.0-preview8.19405.4": {
-      "sha512": "bn8Vr0ar64kLjB6orRemCQuwBcRIU+AkCVaT7asnBhNAvUQFDq0AfGzzkYv2XmbRy/tzzOVjgOPQtoxbVyCVrQ==",
+    "Microsoft.Extensions.FileProviders.Physical/2.1.1": {
+      "sha512": "pbT/J3B686Xgktv5WH11FbcbZXDmBQuCN3ce8IKIF+DpOk3p0RgUPrOXcYNp81TyH+K/5Cosr4VFVjYMoirNDg==",
       "type": "package",
-      "path": "microsoft.extensions.fileproviders.physical/3.0.0-preview8.19405.4",
+      "path": "microsoft.extensions.fileproviders.physical/2.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
-        "microsoft.extensions.fileproviders.physical.3.0.0-preview8.19405.4.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.2.1.1.nupkg.sha512",
         "microsoft.extensions.fileproviders.physical.nuspec"
       ]
     },
-    "Microsoft.Extensions.FileSystemGlobbing/3.0.0-preview8.19405.4": {
-      "sha512": "Bvt/Y2PrmO4LSjst5HyrA+Vf49zeqcEujvIpQBBlB2O6Fcvh8rm7oOjn5ha5ncjnSJL2IVU3OeXhmEeAcZdGrw==",
+    "Microsoft.Extensions.FileSystemGlobbing/2.1.1": {
+      "sha512": "Pu/O8jBc7QlEmqmbDGVosuDlyzGspMuKc71rOsJigwGMF5574aWYw9uRMX+ho1dmbnL502ZYHo6PlBP3IXkm5A==",
       "type": "package",
-      "path": "microsoft.extensions.filesystemglobbing/3.0.0-preview8.19405.4",
+      "path": "microsoft.extensions.filesystemglobbing/2.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
-        "microsoft.extensions.filesystemglobbing.3.0.0-preview8.19405.4.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.2.1.1.nupkg.sha512",
         "microsoft.extensions.filesystemglobbing.nuspec"
       ]
     },
@@ -4594,44 +4547,21 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "System.Text.Encodings.Web/4.6.0-preview8.19405.3": {
-      "sha512": "HpXtuYMZDdNRLMlNJ1Ntwqt+EpSSP36/FUPTFJOI5qjHQ0b+smpHyRdfL5u13E3L+tFKUyaLTrTKjKCvyuICVg==",
+    "System.Text.Encodings.Web/4.5.0": {
+      "sha512": "Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
       "type": "package",
-      "path": "system.text.encodings.web/4.6.0-preview8.19405.3",
+      "path": "system.text.encodings.web/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
-        "lib/netcoreapp3.0/System.Text.Encodings.Web.xml",
         "lib/netstandard1.0/System.Text.Encodings.Web.dll",
         "lib/netstandard1.0/System.Text.Encodings.Web.xml",
         "lib/netstandard2.0/System.Text.Encodings.Web.dll",
         "lib/netstandard2.0/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.4.6.0-preview8.19405.3.nupkg.sha512",
+        "system.text.encodings.web.4.5.0.nupkg.sha512",
         "system.text.encodings.web.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Text.Json/4.6.0-preview8.19405.3": {
-      "sha512": "O6k8PlNbSY4vHsMQVJVAXejvyNmfh5y5RL2738zBF40ZCa66/lb445b1g7BwhJaw/Z463N8zEpd0i/+6fYhrpw==",
-      "type": "package",
-      "path": "system.text.json/4.6.0-preview8.19405.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Text.Json.dll",
-        "lib/net461/System.Text.Json.xml",
-        "lib/netcoreapp3.0/System.Text.Json.dll",
-        "lib/netcoreapp3.0/System.Text.Json.xml",
-        "lib/netstandard2.0/System.Text.Json.dll",
-        "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.4.6.0-preview8.19405.3.nupkg.sha512",
-        "system.text.json.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -4856,39 +4786,20 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "System.Threading.Tasks.Extensions/4.5.2": {
-      "sha512": "5HCu8V3QB+gouMZmGrA666weZ0UQRt+OTD16rSE3Hyhu4Qhlvxkf4nTPI0GLy52s0rxgi7C8t2ayFAzw7UK1og==",
+    "System.Threading.Tasks.Extensions/4.3.0": {
+      "sha512": "q9ym5cFXuurjvavn2hSVB9vB7dDUqMr6g+Stph+XfP3fYWzVFKX1QA91zGg4CjceaPPDFiLxw5RknQtJP7qqAw==",
       "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.2",
+      "path": "system.threading.tasks.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/netcoreapp2.1/_._",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
         "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/netcoreapp2.1/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
-        "system.threading.tasks.extensions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec"
       ]
     },
     "System.Threading.ThreadPool/4.3.0": {
@@ -5050,15 +4961,15 @@
       "path": "../ELM.Common/ELM.Common.csproj",
       "msbuildProject": "../ELM.Common/ELM.Common.csproj"
     },
+    "ELM.Consumers.Handlers/1.0.0": {
+      "type": "project",
+      "path": "../ELM.Consumers.Handlers/ELM.Consumers.Handlers.csproj",
+      "msbuildProject": "../ELM.Consumers.Handlers/ELM.Consumers.Handlers.csproj"
+    },
     "ELM.Customers.Data/1.0.0": {
       "type": "project",
       "path": "../ELM.Customers.Data/ELM.Customers.Data.csproj",
       "msbuildProject": "../ELM.Customers.Data/ELM.Customers.Data.csproj"
-    },
-    "ELM.Customers.Producer/1.0.0": {
-      "type": "project",
-      "path": "../ELM.Customers.Producer/ELM.Customers.Producer.csproj",
-      "msbuildProject": "../ELM.Customers.Producer/ELM.Customers.Producer.csproj"
     },
     "ELM.Customers.Services/1.0.0": {
       "type": "project",
@@ -5068,6 +4979,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "ELM.Consumers.Handlers >= 1.0.0",
       "ELM.Customers.Data >= 1.0.0",
       "ELM.Customers.Services >= 1.0.0",
       "MassTransit >= 5.5.6-develop.2133",
@@ -5075,10 +4987,7 @@
       "Microsoft.AspNetCore.Http.Extensions >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 2.1.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.2",
-      "Microsoft.Extensions.Configuration.FileExtensions >= 3.0.0-preview8.19405.4",
-      "Microsoft.Extensions.Configuration.Json >= 3.0.0-preview8.19405.4",
-      "Microsoft.Extensions.DependencyInjection >= 3.0.0-preview8.19405.4",
-      "Microsoft.Extensions.Logging >= 3.0.0-preview8.19405.4",
+      "Microsoft.Extensions.Configuration.Json >= 2.1.1",
       "Microsoft.Extensions.Logging.Console >= 3.0.0-preview8.19405.4",
       "Microsoft.NETCore.App >= 2.1.0",
       "Newtonsoft.Json >= 11.0.2",
@@ -5118,6 +5027,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Consumers.Handlers\\ELM.Consumers.Handlers.csproj": {
+              "projectPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Consumers.Handlers\\ELM.Consumers.Handlers.csproj"
+            },
             "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Customers.Data\\ELM.Customers.Data.csproj": {
               "projectPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Customers.Data\\ELM.Customers.Data.csproj"
             },
@@ -5156,21 +5068,9 @@
             "target": "Package",
             "version": "[2.1.2, )"
           },
-          "Microsoft.Extensions.Configuration.FileExtensions": {
-            "target": "Package",
-            "version": "[3.0.0-preview8.19405.4, )"
-          },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
-            "version": "[3.0.0-preview8.19405.4, )"
-          },
-          "Microsoft.Extensions.DependencyInjection": {
-            "target": "Package",
-            "version": "[3.0.0-preview8.19405.4, )"
-          },
-          "Microsoft.Extensions.Logging": {
-            "target": "Package",
-            "version": "[3.0.0-preview8.19405.4, )"
+            "version": "[2.1.1, )"
           },
           "Microsoft.Extensions.Logging.Console": {
             "target": "Package",

@@ -35,5 +35,10 @@ namespace ELM.Customers.API.Controllers.Base
             }
             return Ok(result);
         }
+
+        public async Task<IActionResult> EmptySuccess<T>(BaseRequestResponseHeader header, ResponseModel<T> result)
+        {
+            return null;
+        }
     }
 }

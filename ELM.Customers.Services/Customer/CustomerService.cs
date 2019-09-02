@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ELM.Common.BaseRequestResponse;
 using ELM.Common.DTO;
+using ELM.Common.Interfaces.CustomerService;
 using ELM.Customers.Database.DAL;
 
 namespace ELM.Customers.Services.Customer

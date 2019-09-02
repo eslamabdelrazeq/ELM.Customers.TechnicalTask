@@ -155,7 +155,6 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Cust
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Customers.Services\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Customers.Services\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Customers.Services\bin\Debug\customer.producer.appsettings.json
-C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\customer.producer.appsettings.json
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Customers.Services.dll.config
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Customers.Services.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Customers.Services.pdb
@@ -257,7 +256,6 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Cu
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\System.Xml.XPath.XDocument.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Common.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Customers.Data.dll
-C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Customers.Producer.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\Microsoft.EntityFrameworkCore.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -283,7 +281,6 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Cu
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Common.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Customers.Data.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Customers.Data.dll.config
-C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\ELM.Customers.Producer.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\Microsoft.EntityFrameworkCore.xml
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
@@ -310,3 +307,5 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Cu
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\obj\Debug\ELM.Customers.Services.csproj.CopyComplete
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\obj\Debug\ELM.Customers.Services.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\obj\Debug\ELM.Customers.Services.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Services\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
