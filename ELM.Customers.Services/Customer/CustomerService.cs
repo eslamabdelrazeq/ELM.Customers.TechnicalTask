@@ -47,8 +47,7 @@ namespace ELM.Customers.Services.Customer
                 Email = d.Email,
                 Phone = d.Phone,
             });
-            _customerRepository.Create(customersList.ToList());
-            //await _customerRepository.Save();
+            await _customerRepository.Create(customersList.ToList());
             return result;
         }
     }

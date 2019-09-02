@@ -240,7 +240,7 @@ namespace ELM.Customers.Database.DAL
             return await _context.SaveChangesAsync();
         }
 
-        public void Create(List<TEntity> entites)
+        public async Task Create(List<TEntity> entites)
         {
             try
             {
@@ -249,7 +249,7 @@ namespace ELM.Customers.Database.DAL
                     (entity as BaseEntity).CreatedAt = DateTime.Now; ;
                     (entity as BaseEntity).CreatedByUserId = "SystemAdmin";
                 }
-                _context.BulkInsert(entites);
+                await _context.BulkInsertAsync(entites);
             }
             catch (Exception ex)
             {

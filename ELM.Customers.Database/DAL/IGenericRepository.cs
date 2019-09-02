@@ -26,7 +26,7 @@ namespace ELM.Customers.Database.DAL
         void LoadCollection(TEntity entity, string property);
         void Dettach(TEntity entity);
         void Create(TEntity entity);
-        void Create(List<TEntity> entites);
+        Task Create(List<TEntity> entites);
         void Update(TEntity entity);
         void Delete(TEntity entity, bool hardDelete = false);
         void Delete(string id);
