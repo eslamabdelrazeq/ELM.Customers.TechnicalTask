@@ -1,0 +1,15 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "RabbitMq": {
+    "Address": "localhost",
+    "Port": 15672,
+    "Exchang": "direct_customers_patch",
+    "ExhangeType": "direct",
+    "Routing": "customers_patch"
+  }
+}
+

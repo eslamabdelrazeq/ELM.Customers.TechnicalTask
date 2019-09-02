@@ -1,0 +1,21 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "DbConnection": "Server=DESKTOP-7SMO040; Database=ELMCustomers; User ID=islam;Password=123456"
+  },
+  "NotificationsAPI": {
+    "Address": "http://localhost:5001/api/Notifications"
+  },
+  "RabbitMq": {
+    "Address": "localhost",
+    "Port": 15672,
+    "Exchang": "direct_customers_patch",
+    "ExhangeType": "direct",
+    "Routing": "customers_patch"
+  }
+}
+

@@ -1,0 +1,12 @@
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\bin\Debug\netstandard2.0\ELM.Common.deps.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\bin\Debug\netstandard2.0\ELM.Common.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\bin\Debug\netstandard2.0\ELM.Common.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.csproj.CoreCompileInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.AssemblyInfoInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.AssemblyInfo.cs
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.csproj.CopyComplete
+C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.csprojAssemblyReference.cache
