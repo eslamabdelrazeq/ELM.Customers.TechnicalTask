@@ -21,3 +21,4 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Co
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.csproj.CopyComplete
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Common\obj\Debug\netstandard2.0\ELM.Common.csprojAssemblyReference.cache

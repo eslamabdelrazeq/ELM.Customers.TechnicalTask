@@ -4,11 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using ELM.Common.BaseRequestResponse;
 using ELM.Common.DTO;
-using ELM.Customers.Producer;
 using ELM.Notifications.API.Controllers.Base;
-using Microsoft.AspNetCore.Http;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace ELM.Notifications.API.Controllers
 {
@@ -16,19 +14,21 @@ namespace ELM.Notifications.API.Controllers
     [ApiController]
     public class NotificationsController : BaseController
     {
-        public NotificationsController()
-        {
+        private readonly IBus _bus;
 
+        public NotificationsController(IBus bus)
+        {
+            _bus = bus;
         }
         [HttpPatch]
-        public async Task<IActionResult> Patch([FromBody] RequestModel<List<CustomerDTO>> customers)
+        public async Task<IActionResult> Patch([FromBody] RequestModel<List<NotificationDTO>> notifications)
         {
             var result = new ResponseModel<string>();
             if (ModelState.IsValid)
             {
-               NotificationExchangePublisher.PublishMessage(JsonConvert.SerializeObject(customers));
+                await _bus.Publish<RequestModel<List<NotificationDTO>>>(notifications);
             }
-            return await HandleResponse(customers.Header, result);
+            return await HandleResponse(notifications.Header, result);
         }
     }
 }

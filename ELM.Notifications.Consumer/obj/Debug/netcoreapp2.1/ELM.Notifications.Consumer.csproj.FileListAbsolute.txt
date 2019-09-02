@@ -22,3 +22,8 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.No
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Consumer\obj\Debug\netcoreapp2.1\ELM.Notifications.Consumer.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Consumer\obj\Debug\netcoreapp2.1\ELM.Notifications.Consumer.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Consumer\obj\Debug\netcoreapp2.1\ELM.Notifications.Consumer.csprojAssemblyReference.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Consumer\bin\Debug\netcoreapp2.1\ELM.Common.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Consumer\bin\Debug\netcoreapp2.1\ELM.Notifications.Handlers.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Consumer\bin\Debug\netcoreapp2.1\ELM.Common.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Consumer\bin\Debug\netcoreapp2.1\ELM.Notifications.Handlers.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Consumer\obj\Debug\netcoreapp2.1\ELM.Notifications.Consumer.csproj.CopyComplete

@@ -19,3 +19,25 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Noti
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Common.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Notifications.Producer.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.csproj.CopyComplete
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Notifications.API.deps.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Notifications.API.runtimeconfig.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Notifications.API.runtimeconfig.dev.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Notifications.API.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Notifications.API.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Common.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Common.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.csprojAssemblyReference.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.csproj.CoreCompileInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.RazorAssemblyInfo.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.RazorAssemblyInfo.cs
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.AssemblyInfoInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.AssemblyInfo.cs
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.RazorTargetAssemblyInfo.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.csproj.CopyComplete
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\obj\Debug\netcoreapp2.1\ELM.Notifications.API.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Common.Bus.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Notifications.Handlers.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Common.Bus.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.API\bin\Debug\netcoreapp2.1\ELM.Notifications.Handlers.pdb
