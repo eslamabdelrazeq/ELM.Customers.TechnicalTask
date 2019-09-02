@@ -24,3 +24,29 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Cust
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\customer.consumer.appsettings.json
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Http.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Http.xml
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\customer.producer.appsettings.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\customer.consumer.appsettings.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Consumer.deps.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Consumer.runtimeconfig.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Consumer.runtimeconfig.dev.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Consumer.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Consumer.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Common.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Data.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Producer.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Services.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Http.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Data.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Data.dll.config
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Services.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Services.dll.config
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Common.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\ELM.Customers.Producer.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Http.xml
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\obj\Debug\netcoreapp2.1\ELM.Customers.Consumer.csprojAssemblyReference.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\obj\Debug\netcoreapp2.1\ELM.Customers.Consumer.csproj.CoreCompileInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\obj\Debug\netcoreapp2.1\ELM.Customers.Consumer.AssemblyInfoInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\obj\Debug\netcoreapp2.1\ELM.Customers.Consumer.AssemblyInfo.cs
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\obj\Debug\netcoreapp2.1\ELM.Customers.Consumer.csproj.CopyComplete
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\obj\Debug\netcoreapp2.1\ELM.Customers.Consumer.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Consumer\obj\Debug\netcoreapp2.1\ELM.Customers.Consumer.pdb

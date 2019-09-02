@@ -611,11 +611,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Technical Task\\ELM.Customers.API\\ELM.Customers.Producer\\ELM.Customers.Producer.csproj",
+      "projectUniqueName": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Customers.Producer\\ELM.Customers.Producer.csproj",
       "projectName": "ELM.Customers.Producer",
-      "projectPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Technical Task\\ELM.Customers.API\\ELM.Customers.Producer\\ELM.Customers.Producer.csproj",
+      "projectPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Customers.Producer\\ELM.Customers.Producer.csproj",
       "packagesPath": "C:\\Users\\Islam Abd Elrazek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Technical Task\\ELM.Customers.API\\ELM.Customers.Producer\\obj\\",
+      "outputPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Customers.Producer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

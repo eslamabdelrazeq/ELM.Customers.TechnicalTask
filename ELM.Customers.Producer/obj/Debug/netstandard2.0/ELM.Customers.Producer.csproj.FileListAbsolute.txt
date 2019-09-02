@@ -8,3 +8,13 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Cust
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Customers.Producer\obj\Debug\netstandard2.0\ELM.Customers.Producer.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Customers.Producer\obj\Debug\netstandard2.0\ELM.Customers.Producer.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Customers.Producer\bin\Debug\netstandard2.0\customer.producer.appsettings.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\bin\Debug\netstandard2.0\customer.producer.appsettings.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\bin\Debug\netstandard2.0\ELM.Customers.Producer.deps.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\bin\Debug\netstandard2.0\ELM.Customers.Producer.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\bin\Debug\netstandard2.0\ELM.Customers.Producer.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\obj\Debug\netstandard2.0\ELM.Customers.Producer.csprojAssemblyReference.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\obj\Debug\netstandard2.0\ELM.Customers.Producer.csproj.CoreCompileInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\obj\Debug\netstandard2.0\ELM.Customers.Producer.AssemblyInfoInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\obj\Debug\netstandard2.0\ELM.Customers.Producer.AssemblyInfo.cs
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\obj\Debug\netstandard2.0\ELM.Customers.Producer.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.Producer\obj\Debug\netstandard2.0\ELM.Customers.Producer.pdb

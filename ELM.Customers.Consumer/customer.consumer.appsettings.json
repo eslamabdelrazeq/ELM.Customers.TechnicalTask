@@ -11,11 +11,21 @@
     "Address": "http://localhost:5001/api/Notifications"
   },
   "RabbitMq": {
+    "UserName": "guest",
+    "Password": "guest",
     "Address": "localhost",
     "Port": 15672,
     "Exchang": "direct_customers_patch",
     "ExhangeType": "direct",
-    "Routing": "customers_patch"
+    "QueueName": "customers_patch",
+    "Routing": "customers_patch",
+    "MaxConcurrentMessages": 20,
+    "FailRetryCount": 3,
+    "Durable": "yes",
+    "AutoDelete": "yes",
+    "FailRetryInterval": 100,
+    "DeadLetterExchange": "failed_customers_exchange",
+    "DeadLetterQueueName": "failed_customers_patch"
   }
 }
 

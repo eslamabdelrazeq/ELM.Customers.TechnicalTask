@@ -9,7 +9,7 @@ namespace ELM.Common.BaseRequestResponse
         public T Data { get; set; }
         public List<string> Errors { get; set; }
     }
-    public class HttpResponseModel<T>
+    public class ResponseModel<T>
     {
         public BaseRequestResponseHeader Header { get; set; }
         public ResponseBody<T> Body { get; set; }

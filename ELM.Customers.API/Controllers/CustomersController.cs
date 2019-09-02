@@ -28,9 +28,9 @@ namespace ELM.Customers.API.Controllers
         }
 
         [HttpPatch]
-        public async Task<IActionResult> Patch([FromBody] HttpRequestModel<List<CustomerDTO>> customers)
+        public async Task<IActionResult> Patch([FromBody] RequestModel<List<CustomerDTO>> customers)
         {
-            var result = new HttpResponseModel<string>();
+            var result = new ResponseModel<string>();
             if (ModelState.IsValid)
             {
                 result = await _customerService.ValidateCustomers(customers);

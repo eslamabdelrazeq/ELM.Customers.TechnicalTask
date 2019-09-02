@@ -10,7 +10,7 @@ namespace ELM.Customers.Services.Queue
 {
     public interface ICustomerPublisher
     {
-        Task<HttpResponseModel<string>> PublishCustomers(HttpRequestModel<List<CustomerDTO>> customers);
+        Task<ResponseModel<string>> PublishCustomers(RequestModel<List<CustomerDTO>> customers);
 
     }
 }

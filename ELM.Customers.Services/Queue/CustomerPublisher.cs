@@ -16,10 +16,10 @@ namespace ELM.Customers.Services.Queue
         {
                 
         }
-        public async Task<HttpResponseModel<string>> PublishCustomers(HttpRequestModel<List<CustomerDTO>> customers)
+        public async Task<ResponseModel<string>> PublishCustomers(RequestModel<List<CustomerDTO>> customers)
         {
             CustomerExchangePublisher.PublishMessage(JsonConvert.SerializeObject(customers));
-            return new HttpResponseModel<string>() { Body = new ResponseBody<string>() { Data = "You request has been submitted successfuly." } };
+            return new ResponseModel<string>() { Body = new ResponseBody<string>() { Data = "You request has been submitted successfuly." } };
         }
     }
 }

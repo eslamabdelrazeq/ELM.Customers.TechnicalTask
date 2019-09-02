@@ -10,7 +10,7 @@ namespace ELM.Customers.Services.Customer
 {
     public interface ICustomerService
     {
-        Task<HttpResponseModel<string>> ValidateCustomers(HttpRequestModel<List<CustomerDTO>> customers);
-        Task<HttpResponseModel<string>> CreateCustomers(HttpRequestModel<List<CustomerDTO>> customers);
+        Task<ResponseModel<string>> ValidateCustomers(RequestModel<List<CustomerDTO>> customers);
+        Task<ResponseModel<string>> CreateCustomers(RequestModel<List<CustomerDTO>> customers);
     }
 }

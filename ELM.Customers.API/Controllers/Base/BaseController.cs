@@ -9,12 +9,12 @@ namespace ELM.Customers.API.Controllers.Base
 {
     public class BaseController : ControllerBase
     {
-        public async Task<IActionResult> HandleResponse<T>(BaseRequestResponseHeader header, HttpResponseModel<T> result)
+        public async Task<IActionResult> HandleResponse<T>(BaseRequestResponseHeader header, ResponseModel<T> result)
         {
             //This part also could be added to middleware but it's better here to avoid desiralization in the middleware.
             if (result.Body is null)
             {
-                result = new HttpResponseModel<T>();
+                result = new ResponseModel<T>();
             }
             result.Header = header;
             result.Header.timeStamp = DateTime.Now;
