@@ -24,7 +24,7 @@ namespace ELM.Consumers.Handlers.Customers
 
         public async Task Consume(ConsumeContext<RequestModel<List<CustomerDTO>>> context)
         {
-            Console.WriteLine($"Receive message value: {context.MessageId.Value}");
+            Console.WriteLine($"Correlation message Id: {context.MessageId.Value}, Business message Id {context.Message.Header.MessageId}");
             var customersService = ServiceProvider.GetRequiredService<ICustomerService>();
             #region DB Insertion
             await customersService.CreateCustomers(context.Message);
@@ -40,7 +40,7 @@ namespace ELM.Consumers.Handlers.Customers
             }
             catch (HttpRequestException ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Notifications API is not reachable",ex.Message);
             }
             #endregion
         }
