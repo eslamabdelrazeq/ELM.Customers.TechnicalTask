@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ELM.Common;
+using ELM.Common.Bus.Services;
 using ELM.Common.DTO;
+using ELM.Common.Interfaces.CustomerService;
+using ELM.Common.RabbitMqConfigs;
+using ELM.Consumers.Handlers.Customers;
 using ELM.Customers.API.Filters;
 using ELM.Customers.API.Validators;
 using ELM.Customers.Database.Context;
 using ELM.Customers.Database.DAL;
 using ELM.Customers.Services.Customer;
-using ELM.Customers.Services.Queue;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -42,7 +44,8 @@ namespace ELM.Customers.API
         {
 
             services.AddMvc()
-            .AddFluentValidation(fvc => {
+            .AddFluentValidation(fvc =>
+            {
                 fvc.RegisterValidatorsFromAssemblyContaining<Startup>();
                 fvc.ImplicitlyValidateChildProperties = true;
                 fvc.RunDefaultMvcValidationAfterFluentValidationExecutes = true;
@@ -63,7 +66,6 @@ namespace ELM.Customers.API
             services.TryAddScoped(typeof(DbContext), typeof(ELMCustomersDbContext));
             services.TryAddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.TryAddScoped(typeof(ICustomerService), typeof(CustomerService));
-            services.TryAddScoped(typeof(ICustomerPublisher), typeof(CustomerPublisher));
             //services.AddTransient<IValidator<CustomerDTO>, CreateCustomerValidator>();
             services.AddTransient<IValidator<List<CustomerDTO>>, CreateCustomerListValidator>();
 
@@ -82,6 +84,26 @@ namespace ELM.Customers.API
                 builder.AddDebug();
 #endif
             });
+
+            #region Masstransit
+            services.AddScoped<CustomersConsumeHandler>();
+            services.AddMassTransit(c =>
+            {
+                c.AddConsumer<CustomersConsumeHandler>();
+            });
+            var rabbitConfig = RabbitConfigurationsLoader.LoadConfigurations("appsettings.json");
+            services.AddSingleton(provider => Bus.Factory.CreateUsingRabbitMq(
+              cfg =>
+              {
+                  var host = cfg.Host(rabbitConfig.URL, "/", settings => {
+                      settings.Password(rabbitConfig.Password);
+                      settings.Username(rabbitConfig.Username);
+                  });
+              }));
+            services.AddSingleton<IBus>(provider => provider.GetRequiredService<IBusControl>());
+            services.AddSingleton<IHostedService, BusService>();
+
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

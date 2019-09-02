@@ -2,114 +2,80 @@
 using ELM.Common.BaseRequestResponse;
 using ELM.Common.DTO;
 using ELM.Common.Entities;
+using ELM.Common.Interfaces.CustomerService;
+using ELM.Common.RabbitMqConfigs;
+using ELM.Consumers.Handlers.Customers;
 using ELM.Customers.Database.Context;
 using ELM.Customers.Database.DAL;
 using ELM.Customers.Services.Customer;
+using GreenPipes;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.FileExtensions;
-using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Net.Http;
-using System.Text;
 
 namespace ELM.Customers.Consumer
 {
     class Program
     {
+        private static string appsettingsFileName = "customer.consumer.appsettings.json";
         static void Main(string[] args)
         {
-            Console.WriteLine("I'm the customers consumer POC");
-            #region Init Config
+            Console.WriteLine("Hi, I'm the customer's consumer POC");
+            #region DI
             IConfiguration config = new ConfigurationBuilder()
-                      .AddJsonFile("customer.consumer.appsettings.json", true, true)
-                      .Build();
+          .AddJsonFile($"{appsettingsFileName}", true, true)
+          .Build();
             var notificationsSection = config.GetSection("NotificationsAPI");
             string notificationsAPIURL = notificationsSection.GetSection("Address").Value;
-
-            var rabbitSection = config.GetSection("RabbitMq");
-            string rabbitURL = rabbitSection.GetSection("Address").Value;
-            int rabbitPort = int.Parse(rabbitSection.GetSection("Port").Value);
-
-            string exchange = rabbitSection.GetSection("Exchang").Value;
-            string routingKey = rabbitSection.GetSection("Routing").Value;
-            string exchangeType = rabbitSection.GetSection("ExhangeType").Value;
-
-            SystemConstants.ConnectionString = config.GetConnectionString("DbConnection");
             var serviceProvider = new ServiceCollection()
            .AddLogging()
            .AddScoped<ICustomerService, CustomerService>()
            .AddScoped(typeof(DbContext), typeof(ELMCustomersDbContext))
+           .AddHttpClient()
            .AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>))
            .BuildServiceProvider();
+
+            //Should add polly and confiugre retry policy here
+            var httpClientFactory = serviceProvider.GetService<IHttpClientFactory>();
+            var client = httpClientFactory.CreateClient();
+            CustomersConsumeHandler.ServiceProvider = serviceProvider;
+            CustomersConsumeHandler.HttpClient = client;
+            CustomersConsumeHandler.NotificationsAPIURL = notificationsAPIURL;
             #endregion
+            #region MassTransit
+            RunMassTransitReceiverWithRabbitMq();
+            #endregion
+        }
 
-
-            #region Queue Settings
-            var factory = new ConnectionFactory() { HostName = rabbitURL };
-            using (var connection = factory.CreateConnection())
-            using (var channel = connection.CreateModel())
+        private static void RunMassTransitReceiverWithRabbitMq()
+        {
+            var rabbitConfig = RabbitConfigurationsLoader.LoadConfigurations(appsettingsFileName, true);
+            IBusControl rabbitBusControl = Bus.Factory.CreateUsingRabbitMq(rabbit =>
             {
-                channel.ExchangeDeclare(exchange: exchange,
-                                        type: exchangeType);
-                var queueName = channel.QueueDeclare().QueueName;
-                channel.QueueBind(queue: queueName,
-                                  exchange: exchange,
-                                  routingKey: routingKey);
-
-
-                Console.WriteLine(" [*] Waiting for messages.");
-
-                var consumer = new EventingBasicConsumer(channel);
-                consumer.Received += async (model, ea) =>
+                var host = rabbit.Host(rabbitConfig.URL, "/", settings =>
                 {
-                    var body = ea.Body;
-                    var message = Encoding.UTF8.GetString(body);
-                    var mroutingKey = ea.RoutingKey;
-                    Console.WriteLine(" [x] Received '{0}':'{1}'",
-                                      mroutingKey, message);
+                    settings.Password(rabbitConfig.Password);
+                    settings.Username(rabbitConfig.Username);
+                });
 
-                    var customrsRespobse = JsonConvert.DeserializeObject<HttpRequestModel<List<CustomerDTO>>>(message);
-                    var customerService = serviceProvider.GetRequiredService<ICustomerService>();
-                    await customerService.CreateCustomers(customrsRespobse);
-
-                    var serviceProviderr = new ServiceCollection()
-                    .AddHttpClient()
-                    .BuildServiceProvider();
-
-                    //Should add polly and confiugre retry policy here
-                    var httpClientFactory = serviceProviderr.GetService<IHttpClientFactory>();
-                    var client = httpClientFactory.CreateClient();
-
-
-                    var request = new HttpRequestMessage(new HttpMethod("PATCH"), $"{notificationsAPIURL}");
-                    request.Content = new StringContent(message, Encoding.UTF8, "application/json");
-                    try
-                    {
-                        var response = await client.SendAsync(request);
-                    }
-                    catch (HttpRequestException ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
-
-
-                };
-                channel.BasicConsume(queue: queueName,
-                                     autoAck: true,
-                                     consumer: consumer);
-
-                Console.WriteLine(" Press [enter] to exit.");
-                Console.ReadLine();
-            }
-            #endregion
-
+                rabbit.ReceiveEndpoint(host, rabbitConfig.QueueName, conf =>
+                {
+                    conf.PrefetchCount = rabbitConfig.MaxConcurrentMessages;
+                    conf.ExchangeType = rabbitConfig.ExchangeType;
+                    conf.Durable = rabbitConfig.Durable;
+                    conf.AutoDelete = rabbitConfig.AutoDelete;
+                    conf.DeadLetterExchange = rabbitConfig.DeadLetterExchange;
+                    conf.BindDeadLetterQueue(rabbitConfig.DeadLetterExchange, rabbitConfig.DeadLetterQueueName);
+                    conf.UseMessageRetry(r => r.Interval(rabbitConfig.FailRetryCount, rabbitConfig.FailRetryInterval));
+                    conf.Consumer<CustomersConsumeHandler>();
+                });
+            });
+            rabbitBusControl.Start();
+            Console.ReadKey();
+            rabbitBusControl.Stop();
         }
     }
 }

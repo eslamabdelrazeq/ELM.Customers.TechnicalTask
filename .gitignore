@@ -1,0 +1,64 @@
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+.vs/ELM.Customers.API/v15/Server/sqlite3/db.lock
+ELM.Customers.API/bin/Debug/netcoreapp2.1/ELM.Customers.Services.dll
+ELM.Customers.API/bin/Debug/netcoreapp2.1/ELM.Customers.Services.pdb
+ELM.Customers.API/Logs/customers-logs.txt
+ELM.Customers.API/obj/Debug/netcoreapp2.1/ELM.Customers.API.csprojAssemblyReference.cache
+ELM.Customers.Consumer/bin/Debug/netcoreapp2.1/ELM.Customers.Services.dll
+ELM.Customers.Consumer/bin/Debug/netcoreapp2.1/ELM.Customers.Services.pdb
+ELM.Customers.Consumer/obj/Debug/netcoreapp2.1/ELM.Customers.Consumer.csprojAssemblyReference.cache
+ELM.Customers.Services/bin/Debug/ELM.Customers.Services.dll
+ELM.Customers.Services/bin/Debug/ELM.Customers.Services.pdb
+ELM.Customers.Services/obj/Debug/ELM.Customers.Services.csprojAssemblyReference.cache
+ELM.Customers.Services/obj/Debug/ELM.Customers.Services.dll
+ELM.Customers.Services/obj/Debug/ELM.Customers.Services.pdb
+ELM.Customers.API/bin/Debug/netcoreapp2.1/ELM.Customers.Services.dll
+ELM.Customers.API/bin/Debug/netcoreapp2.1/ELM.Customers.Services.pdb
+ELM.Customers.API/Logs/customers-logs.txt
+ELM.Customers.API/obj/Debug/netcoreapp2.1/ELM.Customers.API.csprojAssemblyReference.cache
+ELM.Customers.Consumer/bin/Debug/netcoreapp2.1/ELM.Customers.Services.dll
+ELM.Customers.Consumer/bin/Debug/netcoreapp2.1/ELM.Customers.Services.pdb
+ELM.Customers.Consumer/obj/Debug/netcoreapp2.1/ELM.Customers.Consumer.csprojAssemblyReference.cache
+ELM.Customers.Services/bin/Debug/ELM.Customers.Services.dll
+ELM.Customers.Services/bin/Debug/ELM.Customers.Services.pdb
+ELM.Customers.Services/obj/Debug/ELM.Customers.Services.csprojAssemblyReference.cache
+ELM.Customers.Services/obj/Debug/ELM.Customers.Services.dll
+ELM.Customers.Services/obj/Debug/ELM.Customers.Services.pdb
+ELM.Customers.Services/bin/Debug/ELM.Customers.Services.dll
+ELM.Customers.Consumer/obj/Debug/netcoreapp2.1/ELM.Customers.Consumer.csprojAssemblyReference.cache

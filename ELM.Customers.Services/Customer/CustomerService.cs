@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ELM.Common.BaseRequestResponse;
 using ELM.Common.DTO;
+using ELM.Common.Interfaces.CustomerService;
 using ELM.Customers.Database.DAL;
 
 namespace ELM.Customers.Services.Customer
@@ -17,10 +18,10 @@ namespace ELM.Customers.Services.Customer
             _customerRepository = customerRepository;
         }
 
-        public async Task<HttpResponseModel<string>> ValidateCustomers(HttpRequestModel<List<CustomerDTO>> customers)
+        public async Task<ResponseModel<string>> ValidateCustomers(RequestModel<List<CustomerDTO>> customers)
         {
             //Sample business validation
-            var result = new HttpResponseModel<string>() { Body = new ResponseBody<string>() { Errors = new List<string>()} };
+            var result = new ResponseModel<string>() { Body = new ResponseBody<string>() { Errors = new List<string>()} };
             var emails = customers.Body.Select(d => d.Email).ToList();
             GridOptions<ELM.Common.Entities.Customer> gridOptions = new GridOptions<ELM.Common.Entities.Customer>();
             gridOptions.AddFilter(c => emails.Contains(c.Email));
@@ -35,10 +36,10 @@ namespace ELM.Customers.Services.Customer
             }
             return result;
         }
-        public async Task<HttpResponseModel<string>> CreateCustomers(HttpRequestModel<List<CustomerDTO>> customers)
+        public async Task<ResponseModel<string>> CreateCustomers(RequestModel<List<CustomerDTO>> customers)
         {
             //Sample business validation
-            var result = new HttpResponseModel<string>() { Body = new ResponseBody<string>() { Data = "You request has been added successfuly to database." } };
+            var result = new ResponseModel<string>() { Body = new ResponseBody<string>() { Data = "You request has been added successfuly to database." } };
             var customersList = customers.Body.Select(d => new ELM.Common.Entities.Customer
             {
                 FirstName = d.FirstName,
@@ -46,8 +47,7 @@ namespace ELM.Customers.Services.Customer
                 Email = d.Email,
                 Phone = d.Phone,
             });
-            _customerRepository.Create(customersList.ToList());
-            await _customerRepository.Save();
+            await _customerRepository.Create(customersList.ToList());
             return result;
         }
     }

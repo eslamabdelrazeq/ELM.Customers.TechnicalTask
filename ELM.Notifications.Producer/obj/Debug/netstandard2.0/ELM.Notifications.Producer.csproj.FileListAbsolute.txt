@@ -8,3 +8,13 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Noti
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Notifications.Producer\bin\Debug\netstandard2.0\ELM.Notifications.Producer.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Technical Task\ELM.Customers.API\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\bin\Debug\netstandard2.0\notification.producer.appsettings.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\bin\Debug\netstandard2.0\ELM.Notifications.Producer.deps.json
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\bin\Debug\netstandard2.0\ELM.Notifications.Producer.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\bin\Debug\netstandard2.0\ELM.Notifications.Producer.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.csproj.CoreCompileInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.AssemblyInfoInputs.cache
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.AssemblyInfo.cs
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Notifications.Producer\obj\Debug\netstandard2.0\ELM.Notifications.Producer.csprojAssemblyReference.cache

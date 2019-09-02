@@ -1032,11 +1032,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Technical Task\\ELM.Customers.API\\ELM.Notifications.Consumer\\ELM.Notifications.Consumer.csproj",
+      "projectUniqueName": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Notifications.Consumer\\ELM.Notifications.Consumer.csproj",
       "projectName": "ELM.Notifications.Consumer",
-      "projectPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Technical Task\\ELM.Customers.API\\ELM.Notifications.Consumer\\ELM.Notifications.Consumer.csproj",
+      "projectPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Notifications.Consumer\\ELM.Notifications.Consumer.csproj",
       "packagesPath": "C:\\Users\\Islam Abd Elrazek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Technical Task\\ELM.Customers.API\\ELM.Notifications.Consumer\\obj\\",
+      "outputPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Notifications.Consumer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
