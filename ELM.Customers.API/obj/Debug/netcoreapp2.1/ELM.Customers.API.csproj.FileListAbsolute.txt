@@ -32,11 +32,8 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Cu
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.API.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.API.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Common.dll
-C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.Data.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.Services.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Common.pdb
-C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.Data.pdb
-C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.Data.dll.config
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.Services.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.Services.dll.config
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\obj\Debug\netcoreapp2.1\ELM.Customers.API.csprojAssemblyReference.cache
@@ -53,3 +50,5 @@ C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Cu
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Common.Bus.pdb
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Consumers.Handlers.dll
 C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Consumers.Handlers.pdb
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.Database.dll
+C:\Users\Islam Abd Elrazek\Desktop\ELM Github\ELM.Customers.TechnicalTask\ELM.Customers.API\bin\Debug\netcoreapp2.1\ELM.Customers.Database.pdb

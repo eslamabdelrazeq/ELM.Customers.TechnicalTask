@@ -1409,23 +1409,26 @@
           "bin/placeholder/ELM.Consumers.Handlers.dll": {}
         }
       },
-      "ELM.Customers.Data/1.0.0": {
+      "ELM.Customers.Database/1.0.0": {
         "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "ELM.Common": "1.0.0"
+          "ELM.Common": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.2"
         },
         "compile": {
-          "bin/placeholder/ELM.Customers.Data.dll": {}
+          "bin/placeholder/ELM.Customers.Database.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ELM.Customers.Data.dll": {}
+          "bin/placeholder/ELM.Customers.Database.dll": {}
         }
       },
       "ELM.Customers.Services/1.0.0": {
         "type": "project",
         "dependencies": {
           "ELM.Common": "1.0.0",
-          "ELM.Customers.Data": "1.0.0"
+          "ELM.Customers.Database": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ELM.Customers.Services.dll": {}
@@ -4966,10 +4969,10 @@
       "path": "../ELM.Consumers.Handlers/ELM.Consumers.Handlers.csproj",
       "msbuildProject": "../ELM.Consumers.Handlers/ELM.Consumers.Handlers.csproj"
     },
-    "ELM.Customers.Data/1.0.0": {
+    "ELM.Customers.Database/1.0.0": {
       "type": "project",
-      "path": "../ELM.Customers.Data/ELM.Customers.Data.csproj",
-      "msbuildProject": "../ELM.Customers.Data/ELM.Customers.Data.csproj"
+      "path": "../ELM.Customers.Database/ELM.Customers.Database.csproj",
+      "msbuildProject": "../ELM.Customers.Database/ELM.Customers.Database.csproj"
     },
     "ELM.Customers.Services/1.0.0": {
       "type": "project",
@@ -4980,7 +4983,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "ELM.Consumers.Handlers >= 1.0.0",
-      "ELM.Customers.Data >= 1.0.0",
       "ELM.Customers.Services >= 1.0.0",
       "MassTransit >= 5.5.6-develop.2133",
       "MassTransit.RabbitMQ >= 5.5.6-develop.2133",
@@ -5029,9 +5031,6 @@
           "projectReferences": {
             "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Consumers.Handlers\\ELM.Consumers.Handlers.csproj": {
               "projectPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Consumers.Handlers\\ELM.Consumers.Handlers.csproj"
-            },
-            "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Customers.Data\\ELM.Customers.Data.csproj": {
-              "projectPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Customers.Data\\ELM.Customers.Data.csproj"
             },
             "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Customers.Services\\ELM.Customers.Services.csproj": {
               "projectPath": "C:\\Users\\Islam Abd Elrazek\\Desktop\\ELM Github\\ELM.Customers.TechnicalTask\\ELM.Customers.Services\\ELM.Customers.Services.csproj"

@@ -30,7 +30,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ELM.Consumers.Handlers\ELM.Consumers.Handlers.csproj" />
-    <ProjectReference Include="..\ELM.Customers.Data\ELM.Customers.Data.csproj" />
     <ProjectReference Include="..\ELM.Customers.Services\ELM.Customers.Services.csproj" />
   </ItemGroup>
 

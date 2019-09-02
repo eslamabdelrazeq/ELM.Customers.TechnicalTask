@@ -28,7 +28,7 @@
     <ProjectReference Include="..\ELM.Common.Bus\ELM.Common.Bus.csproj" />
     <ProjectReference Include="..\ELM.Common\ELM.Common.csproj" />
     <ProjectReference Include="..\ELM.Consumers.Handlers\ELM.Consumers.Handlers.csproj" />
-    <ProjectReference Include="..\ELM.Customers.Data\ELM.Customers.Data.csproj" />
+    <ProjectReference Include="..\ELM.Customers.Database\ELM.Customers.Database.csproj" />
     <ProjectReference Include="..\ELM.Customers.Services\ELM.Customers.Services.csproj" />
   </ItemGroup>
 

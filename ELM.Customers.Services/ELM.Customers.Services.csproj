@@ -52,9 +52,9 @@
       <Project>{2EAFE236-AC52-4CA9-AB04-6DFF6B5EDDD4}</Project>
       <Name>ELM.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ELM.Customers.Data\ELM.Customers.Data.csproj">
-      <Project>{3A01455F-84EE-40A9-A3B4-270551D21138}</Project>
-      <Name>ELM.Customers.Data</Name>
+    <ProjectReference Include="..\ELM.Customers.Database\ELM.Customers.Database.csproj">
+      <Project>{cf63af92-4a71-40c1-9848-4a84b6770ced}</Project>
+      <Name>ELM.Customers.Database</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

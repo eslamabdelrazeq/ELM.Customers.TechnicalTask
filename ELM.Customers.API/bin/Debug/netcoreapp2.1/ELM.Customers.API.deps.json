@@ -27,7 +27,7 @@
           "ELM.Common": "1.0.0",
           "ELM.Common.Bus": "1.0.0",
           "ELM.Consumers.Handlers": "1.0.0",
-          "ELM.Customers.Data": "1.0.0",
+          "ELM.Customers.Database": "1.0.0",
           "ELM.Customers.Services": "1.0.0",
           "FluentValidation.AspNetCore": "8.5.0-preview4",
           "MassTransit": "5.5.6-develop.2133",
@@ -1011,21 +1011,23 @@
           "ELM.Consumers.Handlers.dll": {}
         }
       },
-      "ELM.Customers.Data/1.0.0": {
+      "ELM.Customers.Database/1.0.0": {
         "dependencies": {
-          "ELM.Common": "1.0.0"
+          "ELM.Common": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.2"
         },
         "runtime": {
-          "ELM.Customers.Data.dll": {}
+          "ELM.Customers.Database.dll": {}
         },
         "compile": {
-          "ELM.Customers.Data.dll": {}
+          "ELM.Customers.Database.dll": {}
         }
       },
       "ELM.Customers.Services/1.0.0": {
         "dependencies": {
           "ELM.Common": "1.0.0",
-          "ELM.Customers.Data": "1.0.0"
+          "ELM.Customers.Database": "1.0.0"
         },
         "runtime": {
           "ELM.Customers.Services.dll": {}
@@ -4309,7 +4311,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ELM.Customers.Data/1.0.0": {
+    "ELM.Customers.Database/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
